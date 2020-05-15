@@ -550,6 +550,271 @@
           box-sizing: border-box;
   min-height: 200px;
   background-color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.information-logo {
+  margin: 80px 0 0 0;
+  width: 274.28571429px;
+}
+.information-logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  margin: 0 0 29px 0;
+}
+.information-logo-link-icon {
+  fill: #ffffff;
+}
+.information-logo-link-name {
+  margin: 0;
+  font-family: raleway;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+.information-logo-link:hover {
+  opacity: 0.5;
+}
+.information-logo-link:active {
+  opacity: 0.3;
+}
+.information-logo-text {
+  margin: 0 0 33px 0;
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: #555555;
+  line-height: 24px;
+}
+.information-logo .btn_no_border {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #d1d1d1;
+}
+.information-logo-btn {
+  margin: 0px;
+  background-color: #fff;
+  position: relative;
+}
+.information-logo-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 84px;
+  border: 5px solid transparent;
+  border-left: 5px solid #d1d1d1;
+}
+.information-logo-btn:hover {
+  color: #555555;
+}
+.information-logo-btn:active {
+  color: #363636;
+}
+.information-logo-btn:focus {
+  outline: none;
+}
+.information-logo-btn:hover::after {
+  border-left: 5px solid #555555;
+}
+.information-logo-btn:active::after {
+  border-left: 5px solid #363636;
+}
+.information-posts {
+  width: 274.28571429px;
+  margin: 0;
+}
+.information-posts-title {
+  display: block;
+  margin: 108px 0 14px 0;
+  font-family: raleway;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+.information-posts-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  text-decoration: none;
+  border-bottom: 1px solid #252525;
+}
+.information-posts-item-data {
+  margin: 19px 0 10px 0;
+  font-family: montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  color: #363636;
+}
+.information-posts-item-text {
+  margin: 0;
+  padding: 0 0 21px 0;
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: #555555;
+  line-height: 20px ;
+}
+.information-posts-item:hover .information-posts-item-data {
+  color: #ffffff;
+}
+.information-posts-item:hover .information-posts-item-text {
+  color: #c7b299;
+}
+.information-posts-item:active .information-posts-item-data {
+  color: #c7b299;
+}
+.information-posts-item:active .information-posts-item-text {
+  color: #ffffff;
+}
+.information-posts-item:last-child {
+  border-bottom: 1px solid transparent;
+  margin: 0 0 61px 0;
+}
+.information-twitter {
+  width: 274.28571429px;
+}
+.information-twitter-title {
+  display: block;
+  margin: 108px 0 14px 0;
+  font-family: raleway;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+.information-twitter-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  text-decoration: none;
+  border-bottom: 1px solid #252525;
+}
+.information-twitter-item-time {
+  padding: 0 0 21px 0;
+  font-family: montserrat;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  color: #363636;
+}
+.information-twitter-item-text {
+  margin: 19px 0 10px 0;
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: #555555;
+  line-height: 20px;
+}
+.information-twitter-item-text-link {
+  color: #00bff3;
+}
+.information-twitter-item-text-link_info {
+  color: #959595;
+}
+.information-twitter-item:hover .information-twitter-item-time {
+  color: #ffffff;
+}
+.information-twitter-item:hover .information-twitter-item-text {
+  color: #c7b299;
+}
+.information-twitter-item:hover .information-twitter-item-text-link {
+  color: #00bef38e;
+}
+.information-twitter-item:hover .information-twitter-item-text-link_info {
+  color: #a48d72;
+}
+.information-twitter-item:active .information-twitter-item-time {
+  color: #c7b299;
+}
+.information-twitter-item:active .information-twitter-item-text {
+  color: #ffffff;
+}
+.information-twitter-item:active .information-twitter-item-text-link {
+  color: #00bff3;
+}
+.information-twitter-item:active .information-twitter-item-text-link_info {
+  color: #c7b299;
+}
+.information-twitter-item:last-child {
+  border-bottom: 1px solid transparent;
+  margin: 0 0 61px 0;
+}
+.information-dribbble {
+  width: 274.28571429px;
+  margin: 0;
+}
+.information-dribbble-title {
+  display: block;
+  margin: 108px 0 26px 0;
+  font-family: raleway;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+}
+.information-dribbble-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.information-dribbble-img-photo {
+  display: block;
+}
+.information-dribbble-img-photo:nth-child(odd) {
+  padding-right: 10px;
+}
+.information-dribbble-img-photo:nth-child(odd) {
+  padding-right: 10px;
+}
+.information-dribbble-img-photo:nth-child(n-2) {
+  padding-bottom: 10px;
+}
+.information-dribbble-img-photo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .copyright {
   width: 1920px;
