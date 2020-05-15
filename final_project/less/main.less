@@ -12,29 +12,35 @@
     flex-wrap: wrap;
     &_item {
         width: 265px;        
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            display: block;
+            width: 55px;
+            height: 55px;
+            fill: #555555;
+        }
         &_title {
             .text(raleway, 22px, 600, @title_color);
-            margin: 0 0 20px 0;
+            margin: 29px 0 20px 0;
         }
         &_text {            
             .text(montserrat, 14px, 300, @text_color);
-            line-height: 24px;            
+            line-height: 24px;
+            text-align: center;            
         }
+
+    }
+    &_item:hover .servises_item_icon {
+        fill: @hover_color;       
     }
     &_item:hover .servises_item_title {
         color: @hover_color;       
     }
     &_item:hover:after {
         background-color: @hover_color;
-    }
-    &_item::before {
-        content: "";
-        display: block;
-        margin: 0px auto 30px;        
-        background-position: center; 
-        background-size: contain;
-        background-repeat: no-repeat;                 
     }
     &_item::after {
         content: "";
@@ -44,31 +50,7 @@
         margin: 30px auto 0; 
         background-color: #f1eee9;        
     }
-    .web:before {
-        width: 49px;
-        height: 50px;
-        background-image: url(../img/servises_item_web.svg);
-    }
-    .dev::before {
-        width: 44px;
-        height: 50px;
-        background-image: url(../img/servises_item_dev.svg);
-    }
-    .custom::before {
-        width: 44px;
-        height: 50px;
-        background-image: url(../img/servises_item_custom.svg);
-    }
-    .dev::before {
-        width: 44px;
-        height: 50px;
-        background-image: url(../img/servises_item_dev.svg);
-    }
-    .marketing::before {
-        width: 52px;
-        height: 50px;
-        background-image: url(../img/servises_item_marketing.svg);
-    }
+    
 }
 
 /*---Realization---*/

@@ -70,17 +70,43 @@
                 opacity: 0.3;
             }
         }                
-            &_search {            
+            .header_inner_search {            
                 margin: 0 0 0 28px;
-                width: 24px;
-                height: 24px;
-                background-image: url(../img/icon_search.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                width: 25px;
+                height: 25px;
+                position: relative;
+                &_label {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../img/icon_search.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: transparent;
+                }
                 &_field {
-                    display: none;
-                }                
+                    width: 0;
+                    min-height: 0;
+                    padding: 5px;
+                    outline: none;
+                    box-sizing: border-box;
+                    background-color: transparent;
+                    border: none;
+                    position: absolute;
+                    top: 40px;
+                    left: -119px;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: Arial;
+                    text-transform: capitalize;
+                }      
+                &_field:focus {
+                    width: 150px;
+                    min-height: 20px;
+                    transition: width 1s ease;
+                    border: 2px solid #fff;                  
+                }          
             }
             &_search:hover{
                 opacity: 0.5;
@@ -189,12 +215,12 @@
             &_item:hover {
                 border: 2px solid @hover_color;
                 background-color: transparent;
-                transform: scale(1.7);
+                transform: scale(1.2);
             }   
             &_item:active {
                 border: 2px solid @hover_color;
                 background-color: @active_pagination;
-                transform: scale(1.7);
+                transform: scale(1.5);
             }   
         }       
     }
