@@ -70,51 +70,53 @@
                 opacity: 0.3;
             }
         }                
-            .header_inner_search {            
-                margin: 0 0 0 28px;
-                width: 25px;
-                height: 25px;
-                position: relative;
-                &_label {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    background-image: url(../img/icon_search.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-color: transparent;
-                }
-                &_field {
-                    width: 0;
-                    min-height: 0;
-                    padding: 5px;
-                    outline: none;
-                    box-sizing: border-box;
-                    background-color: transparent;
-                    border: none;
-                    position: absolute;
-                    top: 40px;
-                    left: -119px;
-                    color: #fff;
-                    font-size: 16px;
-                    font-family: Arial;
-                    text-transform: capitalize;
-                }      
-                &_field:focus {
-                    width: 150px;
-                    min-height: 20px;
-                    transition: width 1s ease;
-                    border: 2px solid #fff;                  
-                }          
-            }
-            &_search:hover{
-                opacity: 0.5;
-            }
-            &_search:active{
-                opacity: 0.3;
-            }
+        .header_inner_search {            
+            margin: 0 0 0 28px;
+            width: 25px;
+            height: 25px;
+            position: relative;
+        }
+        .header_inner_search_label {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/icon_search.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparent;
+        }
+        .header_inner_search_field {
+            width: 0;
+            min-height: 0;
+            padding: 5px;
+            outline: none;
+            box-sizing: border-box;
+            background-color: transparent;
+            border: 2px solid transparent;
+            position: absolute;
+            top: 40px;
+            left: -119px;
+            color: #fff;
+            font-size: 16px;
+            font-family: Arial;
+            text-transform: capitalize;
+        }      
+        .header_inner_search_field:focus {
+            display: block;
+            width: 150px;
+            min-height: 20px;
+            transition: width 1s ease;
+            border: 2px solid #fff;            
+        }          
         
+        &_search:hover{
+            opacity: 0.5;
+        }
+        &_search:active{
+            opacity: 0.3;
+        }
+    
     }
 }
     .carusel {

@@ -173,7 +173,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: transparent;
-  border: none;
+  border: 2px solid transparent;
   position: absolute;
   top: 40px;
   left: -119px;
@@ -183,6 +183,7 @@
   text-transform: capitalize;
 }
 .header_inner .header_inner_search_field:focus {
+  display: block;
   width: 150px;
   min-height: 20px;
   -webkit-transition: width 1s ease;
