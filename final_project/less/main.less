@@ -138,6 +138,40 @@
     background-color: @active_color;
     color: @hover_color;
 }
+/*---Counting---*/
+.count {
+    width: @width;
+    .container;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-item {
+        margin: 70px 45px 60px 45px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        &-number {
+            display: block;
+            margin: 30px 0 20px 0;
+            .text(montserrat, 48px, 200,#ffffff);
+        }
+        &-text {
+            margin: 0;
+            .text(montserrat, 14px, 300,#c7b299);
+            text-transform: uppercase;
+        }
+        &-text:after {
+            content: "";
+            display: block;
+            width: 30px;
+            outline: 2px solid #ffffff;
+            margin: 30px auto 0;
+        }
+    }
+}
 
 /*---Posts---*/
 .post {
