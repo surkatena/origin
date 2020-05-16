@@ -138,6 +138,57 @@
     background-color: @active_color;
     color: @hover_color;
 }
+
+/*---Mobile---*/
+.mobile {
+    width: @width;
+    .container;
+    margin: 0;
+    background-color: #fbfaf8;
+    background-image: url(../img/bg_mobile.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 423px;
+    background-position-y: 79px;    
+    &-title {
+        margin: 0;
+        display: block;
+        padding: 185px 0 40px 500px;
+        .text(raleway, 30px, 600, @title_color);
+    }
+    &-text {
+        margin: 0;
+        padding: 0 0 45px 500px;
+        .text(montserrat, 16px, 300, @text_color);
+        line-height: 28px;
+    }
+    &-list {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 153px 600px;
+        
+        &-item {
+            .text(montserrat, 16px, 300, @text_color);
+            line-height: 32px; 
+            position: relative;
+        }
+        &-item:before {
+            content: "";
+            display: block;
+            width: 21px;
+            height: 21px;
+            background-image: url(../img/mobile_li_item.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 4px;
+            left: -40px;
+        }
+    }
+}
+
+
 /*---Counting---*/
 .count {
     width: @width;

@@ -555,6 +555,67 @@
   background-color: #a48d72;
   color: #c7b299;
 }
+/*---Mobile---*/
+.mobile {
+  width: 1920px;
+  padding: 0 375px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  background-color: #fbfaf8;
+  background-image: url(../img/bg_mobile.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 423px;
+  background-position-y: 79px;
+}
+.mobile-title {
+  margin: 0;
+  display: block;
+  padding: 185px 0 40px 500px;
+  font-family: raleway;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  color: #555555;
+}
+.mobile-text {
+  margin: 0;
+  padding: 0 0 45px 500px;
+  font-family: montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  color: #8c8c8c;
+  line-height: 28px;
+}
+.mobile-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 153px 600px;
+}
+.mobile-list-item {
+  font-family: montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  color: #8c8c8c;
+  line-height: 32px;
+  position: relative;
+}
+.mobile-list-item:before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/mobile_li_item.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 4px;
+  left: -40px;
+}
 /*---Counting---*/
 .count {
   width: 1920px;
