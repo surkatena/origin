@@ -121,7 +121,6 @@
         }        
     }    
 }
-
 .button {
     display: block;
     padding: 20px 29px;
@@ -140,3 +139,32 @@
     color: @hover_color;
 }
 
+
+/*---Partners---*/
+.partners {
+    width: @width;
+    .container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg_partners.jpg);
+    background-color: #3d3f43;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-logo {
+        display: block;
+        margin: 140px 45px;
+        text-decoration: none;
+        &-item {
+            display: block;
+            background-color: transparent;
+        }       
+    }
+    &-logo:hover {
+        opacity: 0.5;
+    }
+    &-logo:active {
+        opacity: 0.3;
+    }
+}
