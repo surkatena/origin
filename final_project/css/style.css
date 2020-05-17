@@ -164,6 +164,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
+  cursor: pointer;
 }
 .header_inner .header_inner_search_field {
   width: 0;
@@ -601,6 +602,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 .video-info-play-btn-icon {
   margin: auto;
@@ -706,6 +708,7 @@
   border: 1.0px solid #ebebeb;
   border-radius: 3.0px;
   background-color: transparent;
+  cursor: pointer;
 }
 .project-nav-item:focus {
   outline: none;
