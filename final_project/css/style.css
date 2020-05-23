@@ -1641,3 +1641,9 @@
   border-right: none;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .mobile {
+    width: 100%;
+    background-color: red;
+  }
+}
