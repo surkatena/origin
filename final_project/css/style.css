@@ -953,6 +953,9 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.count-item-icon {
+  fill: #c7b299;
+}
 .count-item-number {
   display: block;
   margin: 30px 0 20px 0;
